@@ -89,7 +89,7 @@ function Navbar() {
             <div className="bg-black rounded-full">
               <button
                 type="button"
-                className="rounded-full hover:-translate-y-[4px] transition-all duration-300 border border-black px-5 py-3 text-sm font-semibold text-black shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 bg-[#FFE01B] focus-visible:outline-black"
+                className="rounded-full bg-[#FFE01B] hover:-translate-y-[4px] transition-all duration-300 border border-black px-5 py-3 text-sm font-semibold text-black shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black"
               >
                 Sign Up
               </button>
@@ -151,18 +151,40 @@ function Navbar() {
                     ))}
                   </nav>
                 </div>
+
                 <div className="mt-2 space-y-2">
+                  <ul className="  inline-flex items-center ">
+                    <Search size={15} />
+                    Search
+                  </ul>
+                  <br />
+                  <ul className="  inline-flex items-center  ">
+                    <img
+                      className=" w-[20px]"
+                      src="https://mailchimp.com/release/plums/cxp/images/global_nav/globe_icon.cb42f83a.1.svg"
+                      alt=""
+                    />
+                    <p className=" text-[15px] ">English</p>
+                    <span>
+                      <ChevronDown className=" h-[10px] w-[10px]" />
+                    </span>
+                  </ul>
+                  <ul>
+                    <p className=" text-[15px]">
+                      Contact Sales : +1 (800) 315-5939
+                    </p>
+                  </ul>
                   <button
                     type="button"
-                    className="w-full rounded-md border border-black px-3 py-2 text-sm font-semibold text-black shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black"
+                    className="w-full rounded-full border border-black px-3 py-2 text-sm font-semibold text-black shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black"
                   >
-                    Sign In
+                    Log In
                   </button>
                   <button
                     type="button"
-                    className="w-full rounded-md bg-black px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-black/10 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black"
+                    className="w-full border border-black rounded-full bg-[#FFE01B] px-3 py-2 text-sm font-semibold text-black shadow-sm hover:bg-[#FFE01B]/70 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black"
                   >
-                    Log In
+                    Sign In
                   </button>
                 </div>
               </div>
