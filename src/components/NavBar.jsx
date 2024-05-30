@@ -41,7 +41,7 @@ function Navbar() {
           {/* <span className="font-bold">DevUI</span> */}
         </div>
         <div className="hidden grow items-start lg:flex">
-          <ul className="ml-12 inline-flex space-x-8">
+          <ul className="ml-12 inline-flex space-x-4">
             {menuItems.map((item) => (
               <li key={item.name}>
                 <a

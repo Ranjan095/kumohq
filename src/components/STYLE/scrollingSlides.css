@@ -1,0 +1,355 @@
+section.scrollingSlides:first-child {
+    padding-top: var(--iaGlobalNavHeight)
+}
+
+.scrollingSlides.has-no-title {
+    border-top: var(--module-padding) solid transparent
+}
+
+@media screen and (min-width: 62em) {
+    .scrollingSlides.has-no-title {
+        border-top: none
+    }
+}
+
+.scrollingSlides .ss__content {
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: var(--module-padding)
+}
+
+@media screen and (min-width: 62em) {
+    .scrollingSlides .ss__content {
+        width: 100%;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -ms-flex-align: start;
+        align-items: flex-start;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        padding-bottom: 0
+    }
+}
+
+@media screen and (min-width: 62em) {
+    .scrollingSlides .ss__sidebar-holder {
+        width: 50%;
+        position: sticky;
+        top: var(--iaGlobalNavHeight);
+        height: calc(100vh - var(--iaGlobalNavHeight));
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box
+    }
+}
+
+.scrollingSlides .ss__sidebar {
+    overflow: hidden;
+    position: sticky;
+    top: 0;
+    display: grid;
+    padding: 3rem;
+    height: calc(100vh - var(--iaGlobalNavHeight));
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box
+}
+
+.scrollingSlides .ss__sidebar .media__holder {
+    grid-area: 1/1/2/2;
+    opacity: 0;
+    -webkit-transition: opacity .15s ease-in-out;
+    -o-transition: opacity .15s ease-in-out;
+    transition: opacity .15s ease-in-out;
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    max-height: calc(100vh - 6rem - var(--iaGlobalNavHeight));
+    display: -ms-flexbox;
+    display: flex
+}
+
+.scrollingSlides .ss__sidebar .media__holder.is-active {
+    opacity: 1;
+    z-index: 2
+}
+
+.scrollingSlides .ss__sidebar .media__holder .lottie-animation,
+.scrollingSlides .ss__sidebar .media__holder .static-image {
+    width: 100%
+}
+
+.scrollingSlides .ss__sidebar .media__holder .static-image {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center
+}
+
+@media screen and (min-width: 62em) {
+    .scrollingSlides .ss__slides-holder {
+        width: 50%
+    }
+}
+
+@media screen and (min-width: 62em) {
+    .scrollingSlides .ss__slides {
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        padding: 0 15%;
+        max-width: 40rem
+    }
+}
+
+@media screen and (min-width: 88.88888889em) {
+    .scrollingSlides .ss__slides {
+        padding-left: 6.66666667rem
+    }
+}
+
+.scrollingSlides .ss__slides .ss__slide {
+    position: relative
+}
+
+@media screen and (min-width: 62em) {
+    .scrollingSlides .ss__slides .ss__slide {
+        height: 100vh;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-align: center;
+        align-items: center
+    }
+}
+
+.scrollingSlides .ss__slides .ss__slide-description>:not(:last-child):not(blockquote) {
+    margin-bottom: var(--spacing-3)
+}
+
+.scrollingSlides .ss__slides blockquote {
+    margin-bottom: var(--spacing-5)
+}
+
+.scrollingSlides .ss__slides blockquote p {
+    font: italic 75%/1.25 Means Web, Georgia, Times, Times New Roman, serif;
+    -webkit-font-variant-ligatures: none;
+    font-variant-ligatures: none
+}
+
+@media screen and (min-width: 62em) {
+    .scrollingSlides .ss__mobile-only {
+        display: none
+    }
+}
+
+.scrollingSlides .ss__desktop-only {
+    display: none
+}
+
+@media screen and (min-width: 62em) {
+    .scrollingSlides .ss__desktop-only {
+        display: initial
+    }
+}
+
+@media screen and (min-width: 62em) {
+    .scrollingSlides .mobile-only {
+        display: none
+    }
+}
+
+/* /////////////////////////////////////////////////////////////////////////////////////////////////////////////////  */
+
+#lottie-stop-button,
+#lottie-loop-toggle,
+#lottie-seeker-input {
+    display: none;
+}
+
+#animation-container {
+    position: relative;
+}
+
+#lottie-play-button {
+    width: 32px;
+    height: 32px;
+    background: rgba(36, 28, 21, 0.05);
+    align-items: center;
+    border-radius: 50%;
+    justify-content: center;
+    outline: none;
+    border: 0;
+    position: absolute;
+    left: 20px;
+    bottom: 20px;
+}
+
+@media screen and (min-width: 62em) {
+    #lottie-play-button {
+        clip: rect(0 0 0 0);
+        height: 1px;
+        width: 1px;
+        margin: -1px;
+        overflow: hidden;
+        padding: 0;
+    }
+}
+
+#lottie-play-button>svg>path {
+    fill: #241C15;
+    stroke: #FFFFFF;
+    stroke-opacity: 50%;
+}
+
+#lottie-play-button:hover {
+    background: rgba(36, 28, 21, 0.15);
+}
+
+#lottie-play-button:focus {
+    border: 1px solid #4BC4C2;
+}
+
+#animation-container:hover #lottie-play-button {
+    width: 32px;
+    height: 32px;
+    clip: auto;
+}
+
+#animation-container:not(:hover) #lottie-play-button {
+    border: none;
+}
+
+#lottie-controls {
+    height: 0px;
+}
+
+
+#lottie-stop-button,
+#lottie-loop-toggle,
+#lottie-seeker-input {
+    display: none;
+}
+
+#animation-container {
+    position: relative;
+}
+
+#lottie-play-button {
+    width: 32px;
+    height: 32px;
+    background: rgba(36, 28, 21, 0.05);
+    align-items: center;
+    border-radius: 50%;
+    justify-content: center;
+    outline: none;
+    border: 0;
+    position: absolute;
+    left: 20px;
+    bottom: 20px;
+}
+
+@media screen and (min-width: 62em) {
+    #lottie-play-button {
+        clip: rect(0 0 0 0);
+        height: 1px;
+        width: 1px;
+        margin: -1px;
+        overflow: hidden;
+        padding: 0;
+    }
+}
+
+#lottie-play-button>svg>path {
+    fill: #241C15;
+    stroke: #FFFFFF;
+    stroke-opacity: 50%;
+}
+
+#lottie-play-button:hover {
+    background: rgba(36, 28, 21, 0.15);
+}
+
+#lottie-play-button:focus {
+    border: 1px solid #4BC4C2;
+}
+
+#animation-container:hover #lottie-play-button {
+    width: 32px;
+    height: 32px;
+    clip: auto;
+}
+
+#animation-container:not(:hover) #lottie-play-button {
+    border: none;
+}
+
+#lottie-controls {
+    height: 0px;
+}
+
+
+/* 2 */
+#lottie-stop-button,
+#lottie-loop-toggle,
+#lottie-seeker-input {
+    display: none;
+}
+
+#animation-container {
+    position: relative;
+}
+
+#lottie-play-button {
+    width: 32px;
+    height: 32px;
+    background: rgba(36, 28, 21, 0.05);
+    align-items: center;
+    border-radius: 50%;
+    justify-content: center;
+    outline: none;
+    border: 0;
+    position: absolute;
+    left: 20px;
+    bottom: 20px;
+}
+
+@media screen and (min-width: 62em) {
+    #lottie-play-button {
+        clip: rect(0 0 0 0);
+        height: 1px;
+        width: 1px;
+        margin: -1px;
+        overflow: hidden;
+        padding: 0;
+    }
+}
+
+#lottie-play-button>svg>path {
+    fill: #241C15;
+    stroke: #FFFFFF;
+    stroke-opacity: 50%;
+}
+
+#lottie-play-button:hover {
+    background: rgba(36, 28, 21, 0.15);
+}
+
+#lottie-play-button:focus {
+    border: 1px solid #4BC4C2;
+}
+
+#animation-container:hover #lottie-play-button {
+    width: 32px;
+    height: 32px;
+    clip: auto;
+}
+
+#animation-container:not(:hover) #lottie-play-button {
+    border: none;
+}
+
+#lottie-controls {
+    height: 0px;
+}

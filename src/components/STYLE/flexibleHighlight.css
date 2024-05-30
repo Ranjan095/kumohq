@@ -1,0 +1,259 @@
+.p23FlexibleHighlight {
+    border-radius: .5rem;
+    margin: .75rem
+}
+
+.p23FlexibleHighlight.backgroundCoconut {
+    background-color: #f6f6f4
+}
+
+@media screen and (min-width: 62em) {
+    .p23FlexibleHighlight {
+        border-radius:0;
+        margin: 0
+    }
+
+    .p23FlexibleHighlight.backgroundCoconut {
+        background-color: #fff
+    }
+}
+
+@media screen and (max-width: 62em) {
+    .p23FlexibleHighlight.module {
+        padding-top:var(--module-padding-top,var(--module-padding))!important
+    }
+
+    .p23FlexibleHighlight.module--reducedPadding {
+        padding-top: var(--module-reducedPadding)!important
+    }
+
+    .p23FlexibleHighlight.module--noPadding {
+        padding-top: 0!important
+    }
+}
+
+.p23FlexibleHighlight .module--content {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    color: var(--copy-color)
+}
+
+.p23FlexibleHighlight .module--content .column {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    max-width: 100%;
+    -ms-flex: 1 1 100%;
+    flex: 1 1 100%;
+    -ms-flex-pack: center;
+    justify-content: center;
+    text-align: left;
+    -ms-flex-align: start;
+    align-items: flex-start
+}
+
+@media screen and (min-width: 62em) {
+    .p23FlexibleHighlight .module--content .column {
+        -ms-flex:1 1 0%;
+        flex: 1 1 0%
+    }
+}
+
+.p23FlexibleHighlight .module--content .column>:first-child {
+    margin-top: 0
+}
+
+.p23FlexibleHighlight .module--content .column .image,.p23FlexibleHighlight .module--content .column .lottie-animation,.p23FlexibleHighlight .module--content .column .mediaImage__image,.p23FlexibleHighlight .module--content .column .mediaImage__link {
+    width: 100%
+}
+
+.p23FlexibleHighlight .module--content .column.column1>:not(.image:only-child,.mediaImage__image:only-child,.mediaImage__link:only-child,.lottie-animation).image,.p23FlexibleHighlight .module--content .column.column1>:not(.image:only-child,.mediaImage__image:only-child,.mediaImage__link:only-child,.lottie-animation).mediaImage__image,.p23FlexibleHighlight .module--content .column.column1>:not(.image:only-child,.mediaImage__image:only-child,.mediaImage__link:only-child,.lottie-animation).mediaImage__link,.p23FlexibleHighlight .module--content .column.column1>:not(.image:only-child,.mediaImage__image:only-child,.mediaImage__link:only-child,.lottie-animation) img {
+    width: auto
+}
+
+@media screen and (min-width: 62em) {
+    .p23FlexibleHighlight .module--content .column.column1>:not(.image:only-child,.mediaImage__image:only-child,.mediaImage__link:only-child,.lottie-animation) {
+        margin-right:16.66666667%;
+        max-width: 83.33333333%
+    }
+}
+
+.p23FlexibleHighlight .module--content .column.column2 {
+    margin-top: var(--spacing-5)
+}
+
+@media screen and (min-width: 62em) {
+    .p23FlexibleHighlight .module--content .column.column2 {
+        margin-top:0
+    }
+}
+
+.p23FlexibleHighlight .module--content .column.column2>:not(.image:only-child,.mediaImage__image:only-child,.mediaImage__link:only-child,.lottie-animation).image,.p23FlexibleHighlight .module--content .column.column2>:not(.image:only-child,.mediaImage__image:only-child,.mediaImage__link:only-child,.lottie-animation).mediaImage__image,.p23FlexibleHighlight .module--content .column.column2>:not(.image:only-child,.mediaImage__image:only-child,.mediaImage__link:only-child,.lottie-animation).mediaImage__link,.p23FlexibleHighlight .module--content .column.column2>:not(.image:only-child,.mediaImage__image:only-child,.mediaImage__link:only-child,.lottie-animation) img {
+    width: auto
+}
+
+@media screen and (min-width: 62em) {
+    .p23FlexibleHighlight .module--content .column.column2>:not(.image:only-child,.mediaImage__image:only-child,.mediaImage__link:only-child,.lottie-animation) {
+        margin-left:16.66666667%;
+        max-width: 83.33333333%
+    }
+}
+
+.p23FlexibleHighlight .module--content.flex--mobile-reverse {
+    -ms-flex-direction: column-reverse;
+    flex-direction: column-reverse
+}
+
+@media screen and (min-width: 62em) {
+    .p23FlexibleHighlight .module--content.flex--mobile-reverse {
+        -ms-flex-direction:row;
+        flex-direction: row
+    }
+}
+
+.p23FlexibleHighlight .module--content.flex--mobile-reverse .column.column1 {
+    margin-top: var(--spacing-5)
+}
+
+@media screen and (min-width: 62em) {
+    .p23FlexibleHighlight .module--content.flex--mobile-reverse .column.column1 {
+        margin-top:0
+    }
+}
+
+.p23FlexibleHighlight .module--content.flex--mobile-reverse .column.column2 {
+    margin-top: 0
+}
+
+.p23FlexibleHighlight .module--content.content--vertical .column {
+    -ms-flex: 1 1 100%;
+    flex: 1 1 100%
+}
+
+.p23FlexibleHighlight .module--content.content--vertical .column.column2 {
+    margin-top: var(--spacing-7)
+}
+
+.p23FlexibleHighlight .module--content.content--vertical .column>* {
+    width: 100%;
+    -ms-flex-item-align: center;
+    align-self: center;
+    text-align: center;
+    margin-left: 0!important;
+    margin-right: 0!important;
+    max-width: percent(.66666667)!important
+}
+
+.p23FlexibleHighlight .module--content.content--vertical .cta__holder,.p23FlexibleHighlight .module--content.content--vertical .image {
+    max-width: 100%!important
+}
+
+.p23FlexibleHighlight .module--content.content--vertical .p23HighlightCalloutPair {
+    max-width: 25rem!important
+}
+
+.p23FlexibleHighlight .module--content.content--vertical .p23HighlightCalloutPair .callout {
+    text-align: center;
+    width: 50%
+}
+
+.p23FlexibleHighlight .module--content.content--vertical.flex--mobile-reverse .column.column1 {
+    margin-top: var(--module-padding)!important
+}
+
+@media screen and (min-width: 62em) {
+    .p23FlexibleHighlight .module--content.content--vertical.flex--mobile-reverse .column.column1 {
+        margin-top:0!important
+    }
+}
+
+.p23FlexibleHighlight .module--content.content--vertical.flex--mobile-reverse .column.column2 {
+    margin-top: 0!important
+}
+
+@media screen and (min-width: 62em) {
+    .p23FlexibleHighlight .module--content.content--vertical.flex--mobile-reverse .column.column2 {
+        margin-top:var(--spacing-7)!important
+    }
+}
+
+@media screen and (min-width: 62em) {
+    .p23FlexibleHighlight .module--content.vertical-align--top .column {
+        -ms-flex-pack:start;
+        justify-content: start
+    }
+}
+
+.p23FlexibleHighlight .module--content h2 {
+    font-size: 1.75rem;
+    margin-top: var(--spacing-6)
+}
+
+@media screen and (min-width: 36em) {
+    .p23FlexibleHighlight .module--content h2 {
+        font-size:2.5rem;
+        line-height: 1.2
+    }
+}
+
+.p23FlexibleHighlight .module--content h3 {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    margin-top: var(--spacing-5)
+}
+
+@media screen and (min-width: 36em) {
+    .p23FlexibleHighlight .module--content h3 {
+        font-size:2rem;
+        line-height: 1.25
+    }
+}
+
+.p23FlexibleHighlight .module--content p {
+    font-size: 1.125rem;
+    line-height: 1.5rem;
+    margin-top: var(--spacing-4)
+}
+
+@media screen and (min-width: 36em) {
+    .p23FlexibleHighlight .module--content p {
+        font-size:var(--copy-regular-size);
+        line-height: 1.6
+    }
+}
+
+.p23FlexibleHighlight .module--content a:not(.mediaImage__link).ctaPrimary,.p23FlexibleHighlight .module--content a:not(.mediaImage__link).ctaSecondary {
+    margin-top: var(--spacing-5)
+}
+
+@media screen and (min-width: 36em) {
+    .p23FlexibleHighlight .module--content a:not(.mediaImage__link).ctaPrimary,.p23FlexibleHighlight .module--content a:not(.mediaImage__link).ctaSecondary {
+        margin-top:2.5rem
+    }
+}
+
+.p23FlexibleHighlight .module--content blockquote {
+    margin-top: var(--spacing-5);
+    font-style: italic;
+    -webkit-font-variant-ligatures: none;
+    font-variant-ligatures: none;
+    font-size: var(--h3-size);
+    line-height: 2.25rem
+}
+
+@media screen and (min-width: 36em) {
+    .p23FlexibleHighlight .module--content blockquote {
+        margin-top:2.5rem;
+        line-height: 2.75rem
+    }
+}
+
+.p23FlexibleHighlight .module--content ul {
+    list-style: inside
+}
+
